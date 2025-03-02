@@ -1,0 +1,46 @@
+# 🐍 Arquivos compilados do Python
+__pycache__/
+*.py[cod]
+
+# 🚀 Diretórios e arquivos gerados pelo setuptools
+*.egg-info/
+*.egg
+dist/
+build/
+
+# 📦 Dependências geradas pelo pip-tools
+*.pip
+pip-wheel-metadata/
+
+# 🔧 Arquivos de ambiente virtual
+venv/
+.env/
+.venv/
+
+# ⚙️ Configurações locais e segredos
+# settings.toml
+# default.toml
+
+# 🐳 Docker
+*.log
+docker-compose.override.yaml
+postgres/data/
+postgres/*.log
+postgres/*.pid
+
+# 🧪 Arquivos de cache de testes
+.tox/
+.nox/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 📑 EditorConfig, IDEs e ferramentas locais
+.vscode/
+.idea/
+*.iml
+
+# 🔥 Arquivos temporários e desnecessários
+.DS_Store
+Thumbs.db
+*.swp

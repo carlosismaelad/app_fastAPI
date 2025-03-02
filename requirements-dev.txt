@@ -1,0 +1,8 @@
+ipdb #debugger
+sdb #debugger remoto
+pip-tools #lock de dependencias
+pytest #execucao de testes
+pytest-order #odenacao de testes
+httpx #request async para testes
+black #auto formatacao
+flake8 #linter
