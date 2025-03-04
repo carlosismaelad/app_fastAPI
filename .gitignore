@@ -17,9 +17,10 @@ venv/
 .env/
 .venv/
 
-# ⚙️ Configurações locais e segredos
+# ⚙️ Configurações locais e segredos (normalmente não commitados)
 # settings.toml
 # default.toml
+# .secrets.toml
 
 # 🐳 Docker
 *.log
@@ -44,3 +45,4 @@ htmlcov/
 .DS_Store
 Thumbs.db
 *.swp
+
