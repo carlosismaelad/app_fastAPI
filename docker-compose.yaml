@@ -1,3 +1,6 @@
+networks:
+  local:
+    driver: bridge
 services:
   api:
     build:
@@ -14,6 +17,8 @@ services:
       - db
     stdin_open: true
     tty: true
+    networks:
+      - local
   db:
     build: postgres
     image: pamps_postgres-13-alpine-multi-user
@@ -25,3 +30,17 @@ services:
       - POSTGRES_DBS=pamps, pamps_test
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    networks:
+      - local
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pamps_pgadmin
+    depends_on:
+      - db
+    ports:
+      - "15432:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pamps@mail.com
+      PGADMIN_DEFAULT_PASSWORD: pamps
+    networks:
+      - local
