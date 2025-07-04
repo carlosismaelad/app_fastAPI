@@ -20,7 +20,7 @@ venv/
 # ⚙️ Configurações locais e segredos (normalmente não commitados)
 # settings.toml
 # default.toml
-# .secrets.toml
+.secrets.toml
 
 # 🐳 Docker
 *.log
